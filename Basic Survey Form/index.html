@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+<h1 id="title">Basic Survey Form</h1>
+<p id="description">Please fill out this form with the required information</p>
+<form id="survey-form" action="https://formspree.io/f/mdoqqnbo" method="POST">
+<fieldset>
+<label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        
+ <label for="email" id="email-label">Email-Address: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+ <label for="number" id="number-label">Age (years): <input id="number" type="number" name="age" placeholder="Enter age" min="10" max="120" /></label>
+ <fieldset>
+<legend>Gender(required)</legend>
+        <label for="male"><input id="male" type="radio" value="1" name="gender" class="inline" checked /> Male</label>
+        <label for="female"><input id="female" type="radio" value="2" name="gender" class="inline" />Female</label>
+        <label for="other"><input id="other" type="radio" value="3" name="gender" class="inline" />Other</label>
+        </fieldset>
+<label for="dropdown">Which option best describes your current role??
+<select id="dropdown" name="dropdown">
+  <option value="">(select one)</option>
+  <option  value="1">Student</option>
+  <option  value="2">Teacher</option>
+  <option  value="3">Engineer</option>
+  <option  value="4">Doctor</option>
+  <option  value="5">Police</option>
+  <option  value="6">Businessman</option>
+  <option  value="7">Others</option>
+</select>
+</label>
+<fieldset>
+<legend>Do you live with your family?</legend>
+        <label for="family"><input id="family" type="radio" value="1" name="live" class="inline" checked />Yes</label>
+        <label for="no-family"><input id="no-family" type="radio" value="2" name="live" class="inline" />No</label>
+        
+        </fieldset>
+        <label for="dropdown">What is your hobby?
+        <select id="dropdown" name="dropdown">
+  <option value="">(select one)</option>
+  <option  value="1">Gardening</option>
+  <option  value="2">Cooking</option>
+  <option  value="3">Reading</option>
+  <option  value="4">Photography</option>
+  <option  value="5">Coding</option>
+  <option  value="6">Singing</option>
+  <option  value="7">Dancing</option>
+</select>
+</label>
+<label for="bio">Write about yourself:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="My name is..."></textarea>
+        </label>
+        <label>Do you interest in coding?
+        <label for="checkbox1">
+        <input class="inline" id="checkbox1" type="checkbox" value="1" required name="checkbox1" />Very much interested
+        <label for="checkbox2">
+        <input class="inline" id="checkbox2" type="checkbox" value="2" required name="checkbox1" />Confused 
+      </label>
+      <label for="checkbox3">
+        <input class="inline" id="checkbox3" type="checkbox" value="3" required name="checkbox2" />Not interested 
+      </label>
+      </label>
+<button id="submit" type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+
+  </body>
